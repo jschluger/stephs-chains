@@ -21,7 +21,7 @@ body {
     text-size: 24pt;
 }
 
-#contacttext {
+.contacttext {
     top: 10%;
     width: 100%;
     position: fixed;
@@ -30,4 +30,14 @@ body {
     -webkit-text-stroke: 1px white;
     font-family: sans-serif;
     text-size: 24pt;	 
+}
+
+#stephmoney {
+    color: red;
+    background: black;
+    -webkit-text-stroke: 1px white;
+    font-family: sans-serif;
+    text-size: 24pt;
+    position: fixed;
+    top: 20%;
 }
