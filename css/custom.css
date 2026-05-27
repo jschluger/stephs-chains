@@ -4,7 +4,10 @@ body {
 }
 
 #entrypic {
-    width: 100%
+    width: 100%;
+    position: fixed;
+    top: -90px;
+    z-index: -1;   
 }
 
 #firsttitle {
@@ -12,4 +15,6 @@ body {
     right: 50%;	
     position: absolute;
     text-align: center;
+    color: black;
+    text-outline: white;
 }
