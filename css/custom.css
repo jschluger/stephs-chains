@@ -20,3 +20,14 @@ body {
     font-family: sans-serif;
     text-size: 24pt;
 }
+
+#contacttext {
+    top: 10%;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    color: black;
+    -webkit-text-stroke: 1px white;
+    font-family: sans-serif;
+    text-size: 24pt;	 
+}
