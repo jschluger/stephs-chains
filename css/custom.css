@@ -6,3 +6,10 @@ body {
 #entrypic {
     
 }
+
+#firsttitle {
+    top: 50%;
+    right: 50%;	
+    position: absolute;
+    text-align: center;
+}
