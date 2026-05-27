@@ -10,7 +10,7 @@ body {
     z-index: -1;   
 }
 
-#firsttitle {
+.firsttitle {
     top: 50%;
     left: 45%;	
     position: absolute;
