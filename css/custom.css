@@ -16,5 +16,5 @@ body {
     position: absolute;
     text-align: center;
     color: black;
-    text-outline: white;
+    -webkit-text-stroke: 1px white;
 }
