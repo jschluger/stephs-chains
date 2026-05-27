@@ -40,4 +40,6 @@ body {
     text-size: 24pt;
     position: fixed;
     top: 20%;
+    font-size: 24pt;
+    padding: 4pt;
 }
