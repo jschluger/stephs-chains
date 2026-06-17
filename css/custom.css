@@ -13,7 +13,6 @@ body {
 .firsttitle {
     top: 50%;
     left: 45%;	
-    position: absolute;
     text-align: center;
     color: black;
     -webkit-text-stroke: 1px white;
@@ -24,7 +23,6 @@ body {
 .contacttext {
     top: 10%;
     width: 100%;
-    position: fixed;
     text-align: center;
     color: black;
     -webkit-text-stroke: 1px white;
@@ -38,7 +36,6 @@ body {
     -webkit-text-stroke: 1px white;
     font-family: sans-serif;
     text-size: 24pt;
-    position: fixed;
     top: 20%;
     font-size: 24pt;
     padding: 4pt;
@@ -51,5 +48,5 @@ body {
 .forsale {
     width: 45%;
     margin: 1.5%;
-    border: 2cwr solid white;
+    border: 2cqw solid white;
 }
