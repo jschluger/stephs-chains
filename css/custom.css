@@ -43,3 +43,13 @@ body {
     font-size: 24pt;
     padding: 4pt;
 }
+
+.centereddisplay {
+    text-align: center;
+}
+
+.forsale {
+    width: 45%;
+    margin: 1.5%;
+    border: 2cwr solid white;
+}

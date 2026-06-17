@@ -18,12 +18,12 @@ Items:
 <div class="contacttext">
   <p class="contacttext">Hit me up for chains and stuff! (777) 777 7777 or stephs.chains@gmail.com for inquiries.</p>
 
-  <h1>Gallery</h1>
-  Click on an image to inquire.
-  <div>
+  <div class="centereddisplay">
+    <h1>Gallery</h1>
+    Click on an image to inquire.
     {% for item in items %}
     <a href="mailto:stephschains@gmail.com?subject=Inquiry: item #{{ forloop.index }}">
-      <img src="{{ item }}"></img>
+      <img src="{{ item }}" class="forsale"></img>
     </a>
     {% endfor %}
   </div>
