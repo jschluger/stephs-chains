@@ -2,10 +2,6 @@
 layout: default
 title: Get Swagged Out by Steph!
 ---
-{% assign items = "https://lightroom.adobe.com/v2c/spaces/8c5d9e5c8b064ecc8fa795ba5e00f83a/assets/30ed0cd362304b7ca72b7aa6711504aa/revisions/bfae15d32b644d2f856c1b219d34a397/renditions/a6a05fbdae91b79809fb10df75b60a4e|https://lightroom.adobe.com/v2c/spaces/8c5d9e5c8b064ecc8fa795ba5e00f83a/assets/c1550b77a79948f293a10f2088ef55b1/revisions/271ebcf4389e42f9bcd82ea9f73c7328/renditions/ec915a232fbb66ce60fabfd8e6c8b81c|https://lightroom.adobe.com/v2c/spaces/8c5d9e5c8b064ecc8fa795ba5e00f83a/assets/cd04413503ab44b1babce481c41a7fd5/revisions/12f6cd185c834af29a1316eef6087558/renditions/f6c3b9e21114b0999ed9ba08ced8e085|https://lightroom.adobe.com/v2c/spaces/8c5d9e5c8b064ecc8fa795ba5e00f83a/assets/1c4629ee04e94b66a44a1c9758cbd79f/revisions/8f724c53e2fa4c2689852bf4ab9abf7e/renditions/f4fb0d420b721311315f8d97c00417f1" | split: "|" %}
-
-{% assign markets = "Queen of the Park / Saturday June 6th|||" | split "|" %}
-
 <div class="firsttitle"> <a class="firsttitle" href="index"> 
     <h1>Stephs Chains</h1>
 </a></div>
@@ -15,8 +11,8 @@ title: Get Swagged Out by Steph!
   <p style="color:red">Custom orders are currently closed</p>
   <p>Find me at these upcoming local markets!</p>
   <ul>
-    {% for market in markets %}
-    <li>{{ market }}</li>
+    {% for market in site.data.all.markets %}
+    <li>{{ market.name }} : {{ market.date }}</li>
     {% endfor %}
   </ul>
 </div>
@@ -24,9 +20,10 @@ title: Get Swagged Out by Steph!
 <div class="centereddisplay">
   <h1>Gallery</h1>
   <h2>Click on an image to inquire via email.</h2>
-  {% for item in items %}
-  <a href="mailto:stephschains@gmail.com?subject=Inquiry: item #{{ forloop.index }}">
-    <img src="{{ item }}" class="forsale"></img>
+  {% for item in site.data.all.items %}
+  <a href="mailto:stephschains@gmail.com?subject=Inquiry:{{ item.name }}" class="forsale">
+    {{ item.name }} <span style="color:green">{{ item.price }}</span>
+    <img src="{{ item.image }}"></img>
   </a>
   {% endfor %}
 </div>
