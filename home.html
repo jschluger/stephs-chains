@@ -21,9 +21,11 @@ title: Get Swagged Out by Steph!
   <h1>Gallery</h1>
   <h2>Click on an image to inquire via email.</h2>
   {% for item in site.data.all.items %}
-  <a href="mailto:stephschains@gmail.com?subject=Inquiry:{{ item.name }}" class="forsale">
-    {{ item.name }} <span style="color:green">{{ item.price }}</span>
-    <img src="{{ item.image }}"></img>
-  </a>
+  <div  class="forsale">
+    <a href="mailto:stephschains@gmail.com?subject=Inquiry:{{ item.name }}">
+      {{ item.name }} <span style="color:green">{{ item.price }}</span>
+      <img src="{{ item.image }}"></img>
+    </a>
+  </div>
   {% endfor %}
 </div>
