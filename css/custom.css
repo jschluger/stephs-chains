@@ -49,4 +49,5 @@ body {
     width: 40%;
     margin: 1.5%;
     border: .5cqw solid white;
+    float: left;
 }
